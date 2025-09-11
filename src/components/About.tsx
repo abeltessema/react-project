@@ -1,6 +1,6 @@
 import React from 'react';
 import { Users, Target, Award, Globe, ArrowRight, Zap, Shield, Clock, Lightbulb, CheckCircle, TrendingUp, Recycle, Droplets, Factory } from 'lucide-react';
-
+import NebaImage from '../Neba.jpg';
 const About: React.FC = () => {
   const features = [
     {
@@ -37,22 +37,22 @@ const About: React.FC = () => {
 
   const team = [
     {
-      name: 'Michael Teshome',
-      role: 'Production Manager',
-      photo: 'https://randomuser.me/api/portraits/men/32.jpg',
-      experience: '12+ Years',
+      name: 'Nebeyou Dawit',
+      role: 'CEO',
+      photo: NebaImage,
+      experience: '6+ Years',
     },
     {
-      name: 'Sara Alemayehu',
-      role: 'Quality Control Lead',
-      photo: 'https://randomuser.me/api/portraits/women/44.jpg',
-      experience: '8+ Years',
+      name: 'Position Available',
+      role: 'Operations Manager',
+      photo: null, // No image for placeholder
+      experience: 'Join our Team',
     },
     {
-      name: 'David Mehari',
-      role: 'Operations Director',
-      photo: 'https://randomuser.me/api/portraits/men/65.jpg',
-      experience: '15+ Years',
+      name: 'Position Available',
+      role: 'Quality Director',
+      photo: null, // No image for placeholder
+      experience: 'Join our Team',
     },
   ];
 
@@ -345,16 +345,22 @@ const About: React.FC = () => {
                 
                 <div className="relative z-10 text-center">
                   <div className="relative inline-block mb-6">
-                    <img
-                      src={member.photo}
-                      alt={member.name}
-                      className="w-28 h-28 rounded-2xl object-cover shadow-lg group-hover:scale-105 transition-transform duration-300"
-                    />
+                    {member.photo ? (
+                      <img
+                        src={member.photo}
+                        alt={member.name}
+                        className="w-28 h-28 rounded-2xl object-cover shadow-lg group-hover:scale-105 transition-transform duration-300"
+                      />
+                    ) : (
+                      <div className="w-28 h-28 rounded-2xl bg-white shadow-lg flex items-center justify-center border-2 border-slate-200">
+                        <span className="text-slate-400 text-xs font-medium text-center">Coming<br/>Soon</span>
+                      </div>
+                    )}
                     <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-r from-[#B8860B] to-[#D4AF37] rounded-lg flex items-center justify-center shadow-lg">
                       <div className="w-3 h-3 bg-white rounded-full"></div>
                     </div>
                   </div>
-                  
+                                    
                   <h4 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-[#B8860B] transition-colors duration-300">
                     {member.name}
                   </h4>

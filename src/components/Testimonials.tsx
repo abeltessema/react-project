@@ -1,61 +1,34 @@
 import React from 'react';
 import { Star, Quote } from 'lucide-react';
-
+import MaleFaceImage from '../male-face.jpg';
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Dr. Alemayehu Bekele',
-      position: 'Facility Manager',
-      company: 'Tikur Anbessa Hospital',
-      image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
+      name: 'Kagabo Jackson',
+      // position: 'Facility Manager',
+      company: 'Master Beauty Products',
+      image: MaleFaceImage,
       rating: 5,
-      testimonial: 'General Power PLC delivered exceptional medical gas systems for our hospital. Their attention to detail and compliance with medical standards was outstanding. The team was professional, responsive, and completed the project on time.'
+      testimonial: 'Working with Leo Business Group has been a true partnership. Their packaging solutions are of excellent quality, reliable, and designed with precision to reflect our brand’s image. Deliveries have always been timely, and the service highly professional. Beyond packaging, we also trust Aquasafe water for daily use within our company — a testament to the quality and consistency Leo Business Group stands for.'
     },
     {
       id: 2,
-      name: 'Ato Getachew Tadesse',
-      position: 'Operations Director',
-      company: 'Ethiopian Textile Manufacturing',
-      image: 'https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
+      name: 'Yves',
+      // position: 'Operations Director',
+      company: 'Sorwatom',
+      image: MaleFaceImage,
       rating: 5,
-      testimonial: 'The automation systems implemented by General Power have significantly improved our production efficiency. Their engineering expertise and ongoing support have been invaluable to our operations.'
+      testimonial: 'Leo Business Group has provided us with packaging solutions that meet international standards of quality and reliability. Their commitment to detail ensures that our products are always well protected and attractively presented. Their professionalism and dedication to customer satisfaction make them a trusted partner for our operations.'
     },
     {
       id: 3,
-      name: 'Mrs. Sarah Johnson',
-      position: 'Project Manager',
-      company: 'International Development Corp',
-      image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
+      name: 'Philbert',
+      // position: 'Project Manager',
+      company: 'Zoda Ltd',
+      image: MaleFaceImage,
       rating: 5,
-      testimonial: 'Working with General Power PLC on our commercial building project was a pleasure. They demonstrated deep technical knowledge, maintained excellent communication, and delivered high-quality results within budget.'
-    },
-    {
-      id: 4,
-      name: 'Ato Dawit Negash',
-      position: 'Plant Manager',
-      company: 'Addis Food Processing',
-      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      rating: 5,
-      testimonial: 'The comprehensive HVAC and electrical systems designed by General Power have exceeded our expectations. Their understanding of food industry requirements and safety standards is impressive.'
-    },
-    {
-      id: 5,
-      name: 'Engineer Meron Assefa',
-      position: 'Technical Director',
-      company: 'Ethiopian Manufacturing Group',
-      image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      rating: 5,
-      testimonial: 'General Power PLC consistently delivers innovative solutions that meet our complex industrial requirements. Their team\'s expertise and commitment to excellence make them our preferred engineering partner.'
-    },
-    {
-      id: 6,
-      name: 'Ato Berhanu Wolde',
-      position: 'Maintenance Supervisor',
-      company: 'Hawassa Industrial Park',
-      image: 'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      rating: 5,
-      testimonial: 'The preventive maintenance program established by General Power has dramatically reduced our equipment downtime. Their 24/7 support service gives us confidence in our operations.'
+      testimonial: 'At Zoda Ltd, we value partners who understand both functionality and presentation. Leo Business Group has exceeded our expectations by delivering packaging that is strong, efficient, and brand-enhancing. Their team’s flexibility and commitment to excellence have made them a vital part of our supply chain.'
     }
   ];
 
@@ -82,7 +55,7 @@ const Testimonials: React.FC = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Hear from our satisfied clients who have experienced the quality and professionalism 
-            that defines General Power PLC.
+            that defines Leo Business Group.
           </p>
         </div>
 
@@ -128,52 +101,7 @@ const Testimonials: React.FC = () => {
           ))}
         </div>
 
-        {/* Stats Section */}
-        <div 
-          className="mt-20 rounded-2xl p-8 lg:p-12"
-          style={{ 
-            background: `linear-gradient(to right, #2C3E50, #1A252F)`
-          }}
-        >
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <div>
-              <div 
-                className="text-3xl lg:text-4xl font-bold mb-2"
-                style={{ color: '#B8860B' }}
-              >
-                200+
-              </div>
-              <div className="text-white/90">Projects Completed</div>
-            </div>
-            <div>
-              <div 
-                className="text-3xl lg:text-4xl font-bold mb-2"
-                style={{ color: '#B8860B' }}
-              >
-                15+
-              </div>
-              <div className="text-white/90">Years Experience</div>
-            </div>
-            <div>
-              <div 
-                className="text-3xl lg:text-4xl font-bold mb-2"
-                style={{ color: '#B8860B' }}
-              >
-                50+
-              </div>
-              <div className="text-white/90">Certified Engineers</div>
-            </div>
-            <div>
-              <div 
-                className="text-3xl lg:text-4xl font-bold mb-2"
-                style={{ color: '#B8860B' }}
-              >
-                24/7
-              </div>
-              <div className="text-white/90">Support Available</div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

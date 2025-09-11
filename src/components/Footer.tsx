@@ -128,7 +128,7 @@ const Footer: React.FC = () => {
               <div className="flex items-start">
                 <Globe className="h-5 w-5 mr-3 mt-0.5 flex-shrink-0 text-[#B8860B]" />
                 <div>
-                  <p className="text-gray-300">www.leobusinessgroup.com</p>
+                  <p className="text-gray-300">www.leogroupet.com</p>
                 </div>
               </div>
             </div>
@@ -158,7 +158,7 @@ const Footer: React.FC = () => {
         <div className="border-t mt-12 pt-8 border-[#34495e]">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 Leo Business Group. All rights reserved.
+              © 2025 Leo Business Group. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-[#B8860B] transition-colors duration-300">

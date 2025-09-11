@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
     {
       icon: Globe,
       title: 'Website',
-      details: 'www.leobusinessgroup.com',
+      details: 'www.leogroupet.com',
       subDetails: 'Visit our main website'
     }
   ];
