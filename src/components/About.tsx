@@ -37,7 +37,7 @@ const About: React.FC = () => {
 
   const team = [
     {
-      name: 'Nebeyou Dawit',
+      name: 'Nebiyou Samuel',
       role: 'CEO',
       photo: NebaImage,
       experience: '6+ Years',
